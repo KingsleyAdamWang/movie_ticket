@@ -72,4 +72,24 @@ public class Date {
     public void setWeekNum(int weekNum) {
         this.weekNum = weekNum;
     }
+
+    @Override
+    public String toString() {
+        return year+"-"+month+"-"+day;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Date date = (Date) o;
+
+        return id == date.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
+    }
 }

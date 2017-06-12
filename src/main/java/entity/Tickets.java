@@ -154,4 +154,23 @@ public class Tickets {
     public void setGet_time(java.util.Date get_time) {
         this.get_time = get_time;
     }
+
+    @Override
+    public String toString() {
+        return "Tickets{" +
+                "cinema=" + cinema.getName() +
+                ", film=" + film.getName() +
+                ", date=" + date.toString() +
+                ", start_time='" + start_time + '\'' +
+                ", end_time='" + end_time + '\'' +
+                ", price=" + price +
+                ", discount_msg='" + discount_msg + '\'' +
+                ", app_type=" + app_type +
+                ", hall_address='" + hall_address + '\'' +
+                ", buy_url='" + buy_url + '\'' +
+                ", get_time=" + get_time +
+                '}';
+    }
+
+
 }
